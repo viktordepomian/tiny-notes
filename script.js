@@ -135,4 +135,12 @@ document.addEventListener('DOMContentLoaded', function() {
     loadThemePreference();
     updateCounter();
     notepad.focus();
+
+    document.getElementById('tweetBtn').addEventListener('click', function() {  
+      const text = document.getElementById('note').value;  
+      const tweetText = encodeURIComponent(  
+        `"${text.slice(0, 50)}${text.length > 50 ? '...' : ''}"\n\n✨ Jot notes fast with Tiny Notes → ${window.location.href}`  
+      );  
+      window.open(`https://twitter.com/intent/tweet?text=${tweetText}`);  
+    });  
 });
