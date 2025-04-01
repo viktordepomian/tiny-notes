@@ -32,3 +32,6 @@
 ### Shameless Plug
 ⭐ Star this repo if you hate 100MB Electron "note apps".
 🐛 Found a bug? [Open an Issue]
+
+## 📈 Star History  
+[![Star History Chart](https://api.star-history.com/svg?repos=viktordepomian/tiny-notes&type=Date)](https://star-history.com/#viktordepomian/tiny-notes&Date)  
