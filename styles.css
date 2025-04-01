@@ -1,0 +1,206 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --app-bg-color: white;
+    --header-bg-color: #f0f0f0;
+    --toolbar-bg-color: #f8f8f8;
+    --button-bg-color: white;
+    --button-hover-bg-color: #f0f0f0;
+    --button-active-bg-color: #e6e6e6;
+    --border-color: #ddd;
+    --line-color: #e1e1e1;
+    --status-bg-color: #f0f0f0;
+    --status-text-color: #666;
+}
+
+body.dark-theme {
+    --bg-color: #222;
+    --text-color: #eee;
+    --app-bg-color: #333;
+    --header-bg-color: #444;
+    --toolbar-bg-color: #3a3a3a;
+    --button-bg-color: #555;
+    --button-hover-bg-color: #666;
+    --button-active-bg-color: #777;
+    --border-color: #555;
+    --line-color: #555;
+    --status-bg-color: #444;
+    --status-text-color: #ccc;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Notepad App Styles */
+.notepad-app {
+    background-color: var(--app-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--header-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Toolbar Styles */
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: var(--toolbar-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.toolbar button {
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-color);
+}
+
+.toolbar button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.toolbar button.active {
+    background-color: var(--button-active-bg-color);
+    border-color: var(--border-color);
+}
+
+/* Notepad Styles */
+.notepad-container {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+}
+
+.notepad {
+    position: relative;
+    height: 100%;
+    padding: 15px;
+    overflow-y: auto;
+    z-index: 2;
+    background-color: transparent;
+    line-height: 1.5;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.notepad:focus {
+    outline: none;
+}
+
+/* Notepad Lines */
+.notepad-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image: linear-gradient(var(--line-color) 1px, transparent 1px);
+    background-size: 100% 24px;
+    background-position: 0 15px;
+    transition: background-image 0.3s ease;
+}
+
+/* Status Bar */
+.status-bar {
+    padding: 8px 15px;
+    background-color: var(--status-bg-color);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    color: var(--status-text-color);
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+    
+    .toolbar button {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .notepad-container {
+        height: 300px;
+    }
+}
+
+/* Text Formatting Styles */
+#notepad b, #notepad strong {
+    font-weight: bold;
+}
+
+#notepad i, #notepad em {
+    font-style: italic;
+}
+
+#notepad u {
+    text-decoration: underline;
+}
+
+#notepad s, #notepad strike {
+    text-decoration: line-through;
+}
+
+/* List Styles */
+#notepad ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#notepad ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}

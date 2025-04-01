@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="notepad-app">
+            <h1>Notepad</h1>
+            <div class="toolbar">
+                <button id="bold-btn" title="Bold (Ctrl+B)"><i class="fas fa-bold"></i></button>
+                <button id="italic-btn" title="Italic (Ctrl+I)"><i class="fas fa-italic"></i></button>
+                <button id="underline-btn" title="Underline (Ctrl+U)"><i class="fas fa-underline"></i></button>
+                <button id="strikethrough-btn" title="Strikethrough (Ctrl+S)"><i class="fas fa-strikethrough"></i></button>
+                <button id="ul-btn" title="Unordered List"><i class="fas fa-list-ul"></i></button>
+                <button id="ol-btn" title="Ordered List"><i class="fas fa-list-ol"></i></button>
+                <button id="download-btn" title="Download"><i class="fas fa-download"></i></button>
+                <button id="theme-toggle-btn" title="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="notepad-container">
+                <div id="notepad" class="notepad" contenteditable="true"></div>
+                <div class="notepad-lines"></div>
+            </div>
+            <div class="status-bar">
+                <span id="save-status">Ready</span>
+                <span id="counter">0 words, 0 characters</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
