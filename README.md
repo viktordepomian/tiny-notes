@@ -1,7 +1,7 @@
 # 🔥 Tiny Notes  
 *"Like VSCode, but for your shower thoughts."*  
 
-<img src="images/screenOne.jpg" alt="Site in Light Mode" width="300" style="margin-right: 20px;"><img src="images/screenTwo.jpg" alt="Site in Dark Mode" width="300">
+<img src="images/screenOne.jpg" alt="Site in Light Mode" width="300" hspace="20"><img src="images/screenTwo.jpg" alt="Site in Dark Mode" width="300">
 
 
 
