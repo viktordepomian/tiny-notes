@@ -29,6 +29,6 @@
 ❓ "Can I sync across devices?"
 → Not yet. Be a hero: [Open an Issue] with your dream solution.
 
-Shameless Plug
+### Shameless Plug
 ⭐ Star this repo if you hate 100MB Electron "note apps".
 🐛 Found a bug? [Open an Issue]
