@@ -22,7 +22,7 @@
    git clone [your-repo-url]  
    open index.html  # Boom. Done.
 
-FAQ (Anticipate Laziness)
+### FAQ (Anticipate Laziness)
 ❓ "Why no Markdown?"
 → Because you’re the markup. (Future update maybe.)
 
