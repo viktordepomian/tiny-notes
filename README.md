@@ -30,6 +30,6 @@
 → Not yet. Be a hero: [Open an Issue] with your dream solution.
 
 ### Shameless Plug
-⭐ ![Star History](https://api.star-history.com/svg?repos=viktordepomian/tiny-notes&type=Date) Star this repo if you hate 100MB Electron "note apps".
+⭐ Star this repo if you hate 100MB Electron "note apps".
 ![Star History](https://api.star-history.com/svg?repos=viktordepomian/tiny-notes&type=Date)
 🐛 Found a bug? [Open an Issue]
