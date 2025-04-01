@@ -135,26 +135,4 @@ document.addEventListener('DOMContentLoaded', function() {
     loadThemePreference();
     updateCounter();
     notepad.focus();
-
-    document.getElementById('tweetBtn').addEventListener('click', function() {
-        // Get the note element more reliably
-        const noteElement = document.getElementById('note');
-        if (!noteElement) {
-          console.error("Note element not found!");
-          return;
-        }
-        
-        const text = noteElement.value.trim();
-        
-        if (!text) {
-          alert("Please write a note before tweeting!");
-          return;
-        }
-        
-        const tweetText = encodeURIComponent(
-          `"${text.slice(0, 50)}${text.length > 50 ? '...' : ''}"\n\n✨ Jot notes fast with Tiny Notes → ${window.location.href}`
-        );
-        
-        window.open(`https://twitter.com/intent/tweet?text=${tweetText}`, '_blank');
-    });
 });
