@@ -1,7 +1,8 @@
 # 🔥 Tiny Notes  
 *"Like VSCode, but for your shower thoughts."*  
 
-![Site in Light Mode](images/screenOne.jpg)
+<img src="images/screenOne.jpg" alt="Site in Light Mode" width="200">
+
 
 
 
