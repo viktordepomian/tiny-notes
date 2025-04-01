@@ -34,4 +34,4 @@
 🐛 Found a bug? [Open an Issue]
 
 ### 📈 Star History  
-[![Star History Chart](https://api.star-history.com/svg?repos=viktordepomian/tiny-notes&type=Date)](https://star-history.com/#viktordepomian/tiny-notes&Date)  
+[![Star History Chart](https://api.star-history.com/svg?repos=viktordepomian/tiny-notes&type=Date)](https://star-history.com/#viktordepomian/tiny-notes&Date)
