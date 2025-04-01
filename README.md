@@ -1,7 +1,7 @@
 # 🔥 Tiny Notes  
 *"Like VSCode, but for your shower thoughts."*  
 
-![Site in Light Mode](Images/screenOne.jpg)
+![Site in Light Mode](images/screenOne.jpg)
 
 
 
